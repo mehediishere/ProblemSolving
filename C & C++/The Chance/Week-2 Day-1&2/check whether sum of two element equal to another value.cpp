@@ -4,18 +4,18 @@
                  equal to X. If possible print those two element otherwise print -1.
 */
 #include<stdio.h>
-
+ 
 int main()
 {
-int arr[100], n, x, temp;
-
+int arr[100], n, x, temp, neg = 1;
+ 
     scanf("%d %d",&n, &x);
-
+ 
     for(int i=0; i<n; i++)
     {
         scanf("%d",&arr[i]);
     }
-
+ 
     for(int j = 0; j<n-1; j++)
     {
         for(int k = 0; k<n-j-1; k++)
@@ -28,7 +28,7 @@ int arr[100], n, x, temp;
             }
         }
     }
-
+ 
     for(int i=0; i<n; i++)
     {
         for(int j=0; j<n; j++)
@@ -36,9 +36,15 @@ int arr[100], n, x, temp;
             if((arr[i]+arr[j])==x)
             {
                 printf(" %d %d,",arr[i],arr[j]);
+                neg = 0;
             }
         }
     }
-
+ 
+    if(neg==1)
+    {
+    	printf("-1 \n");
+    }
+ 
     return 0;
 }
