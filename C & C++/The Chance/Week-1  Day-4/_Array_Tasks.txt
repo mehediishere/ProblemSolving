@@ -1,0 +1,618 @@
+Week-1 ::: Day-4
+Topic: Array
+
+Array Tutorial Link:
+http://shoshikkha.com/archives/1666
+https://sattacademy.com/cprogramming/c-arrays.php
+
+
+Array tasks: (You must use for array to solve all these problem)
+1. Take an input N. In the next line input N integers. Print this N integers in separate lines.
+2. Input N integers. Determine the average. Print the average with two digit after the decimal point.
+3. Write a program to copy an array into another array and print both array. (the size of the array should be taken from keyboard).
+4. Given a list of numbers. Save the numbers in an Array. Finally, reverse the array elements and output in a line separated by space.
+5. Write a program in C to merge two arrays.
+6. Write a program in C to separate odd and even integers in separate arrays. Print the array with odd and even sum.
+7. Write a program to find whether a number is there in an array or not.
+8. Write a program in C to find the maximum and minimum elements in an array.
+9. Given an array. Insert a new value in a specific index and reorder the array again.
+10. Given an array. Remove a specific index element and reorder the array again.
+11. Write a program that calculates the summation of all rich numbers of an array. A rich number is a number that is greater than all the previous elements.
+12. Write a program in C to find the second largest element in an array.
+13. Write a program to find the frequency of number X from the given array.
+
+
+MINIMUM=9  - -  MEDIUM=11  - -  MAXIMUM=13
+
+Explanation for Problem 1:
+we take 2 line as input
+first line is the size of the array
+second line is the elements of the array
+then the input will be
+5
+1 2 3 4 5
+and output will be
+1 2 3 4 5
+
+Test Case For Problem_1:
+
+Input_1:
+10
+1 2 3 4 5 6 7 8 9 10
+
+Output_1: 
+1 2 3 4 5 6 7 8 9 10
+
+Input_2:
+10
+10 9 8 7 6 5 4 3 2 1
+
+Output_2: 
+10 9 8 7 6 5 4 3 2 1 
+
+Input_3:
+5
+-1 -2 -3 -4 -5
+
+Output_3: 
+-1 -2 -3 -4 -5
+
+Input_4:
+10
+1 -1 2 -2 3 -3 4 -4 5 -5
+
+Output_4: 
+1 -1 2 -2 3 -3 4 -4 5 -5
+
+Input_5:
+6
+2 2 2 2 2 2
+
+Output_5: 
+2 2 2 2 2 2
+
+
+Explanation for Problem 2:
+we take 2 line as input
+first line is the size of the array
+second line is the elements of the arrayThen Input will be
+5
+1 2 3 4 5
+and Output:
+3.00
+
+Test Case For Problem_2:
+
+Input_1:
+10
+1 2 3 4 5 6 7 8 9 10
+
+Output_1: 
+5.50
+
+Input_2:
+15
+1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+
+Output_2: 
+1.00 
+
+Input_3:
+5
+1 -1 5 2 -2
+
+Output_3: 
+1.00 
+
+Input_4:
+6
+6 6 5 5 6 6
+
+Output_4: 
+5.67
+
+Input_5:
+20
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+
+Output_5: 
+10.50
+
+
+Explanation for Problem 3:
+You have to copy the given array into a new array that means the 2 array after coppied will be same
+So id Array A=1 2 3 4 5
+Then copy Array A into Array B means Array B=1 2 3 4 5
+
+we take 2 line as input
+first line is the size of the array
+second line is the elements of the array
+Input:
+5 
+1 2 3 4 5
+Output:
+1 2 3 4 5
+1 2 3 4 5
+
+Test Case For Problem_3:
+
+Input_1:
+10
+1 2 3 4 5 6 7 8 9 10
+
+Output_1: 
+1 2 3 4 5 6 7 8 9 10
+1 2 3 4 5 6 7 8 9 10
+
+Input_2:
+10
+10 9 8 7 6 5 4 3 2 1
+
+Output_2: 
+10 9 8 7 6 5 4 3 2 1
+10 9 8 7 6 5 4 3 2 1 
+
+Input_3:
+5
+-1 -2 -3 -4 -5
+
+Output_3: 
+-1 -2 -3 -4 -5
+-1 -2 -3 -4 -5
+
+Input_4:
+10
+1 -1 2 -2 3 -3 4 -4 5 -5
+
+Output_4: 
+1 -1 2 -2 3 -3 4 -4 5 -5
+1 -1 2 -2 3 -3 4 -4 5 -5
+
+Input_5:
+6
+2 2 2 2 2 2
+
+Output_5: 
+2 2 2 2 2 2
+2 2 2 2 2 2
+
+
+Explanation for Problem 4:
+in this problem you have to Reverse the given Array
+So if the given array is 1 2 3 4 5
+after reversing it will be 5 4 3 2 1
+
+we take 2 line as input
+first line is the size of the array
+second line is the elements of the array
+Input:
+5 
+1 2 3 4 5
+Output:
+5 4 3 2 1
+
+Test Case For Problem_4:
+
+Input_1:
+10
+1 2 3 4 5 6 7 8 9 10
+
+Output_1: 
+10 9 8 7 6 5 4 3 2 1
+
+Input_2:
+10
+10 9 8 7 6 5 4 3 2 1
+
+Output_2: 
+1 2 3 4 5 6 7 8 9 10
+
+Input_3:
+5
+-1 -2 -3 -4 -5
+
+Output_3: 
+-5 -4 -3 -2 -1
+
+Input_4:
+10
+1 -1 2 -2 3 -3 4 -4 5 -5
+
+Output_4: 
+-5 5 -4 4 -3 3 -2 2 -1 1
+
+Input_5:
+6
+2 2 2 2 2 2
+
+Output_5: 
+2 2 2 2 2 2
+
+
+Explanation for Problem 5:
+In this problem you will have to merge 2 different into 1 array
+So Suppose
+Array A=1 2 3 4 and Array B=5 6 8 7 9
+So after merge those 2 array finally Array A will be A=1 2 3 4 5 6 7 8 9
+we will take 4 lines as input
+the first line is the size of the first array
+the second line is elements of the first array
+the third line is the size of the second array
+the fourth line is elements of the second array
+
+Input:
+5
+1 2 3 4 5
+4
+6 7 8 9
+Output:
+1 2 3 4 5 6 7 8 9
+
+Test Case For Problem_5:
+
+Input_1:
+5
+-1 -2 -3 -4 -5
+2
+-1 -2
+
+Output_1: 
+-1 -2 -3 -4 -5 -1 -2
+
+Input_2:
+4
+1 2 3 4
+4
+1 2 3 4
+
+Output_2: 
+1 2 3 4 1 2 3 4
+
+Input_3:
+10
+1 2 3 4 5 6 7 8 9 10
+10
+10 9 8 7 6 5 4 3 2 1
+
+Output_3: 
+1 2 3 4 5 6 7 8 9 10 10 9 8 7 6 5 4 3 2 1
+
+Input_4:
+3
+1 1 1
+4
+1 1 1 1
+
+Output_4: 
+1 1 1 1 1 1 1
+
+Input_5:
+6
+1 1 2 2 3 3
+4
+4 4 5 5
+
+Output_5: 
+1 1 2 2 3 3 4 4 5 5
+
+
+Explanation for Problem 6:
+In this Problem there will be a given array size  and  element of the array
+you have to take an element from the array and put it into a different array in the basis of their evenness
+
+So if the input is,
+10
+1 2 3 4 5 6 7 8 9 10
+
+Then the output will be like this.
+Even Array: 2 4 6 8 10
+Even Sum: 30
+Odd Array: 1 3 5 7 9
+Odd Sum: 25
+
+Test Case For Problem_6:
+
+Input_1:
+5
+1 2 3 4 5
+
+Output_1: 
+2 4
+6
+1 3 5
+9
+
+Input_2:
+10
+1 2 1 2 1 2 1 2 1 2
+
+Output_2: 
+2 2 2 2 2
+10
+1 1 1 1 1
+5 
+
+Input_3:
+10
+-1 -2 -3 -4 -5 -6 -7 -8 -9 -10
+
+Output_3: 
+-2 -4 - 6 -8 -10
+-30
+-1 -3 -5 -7 -9
+-25
+
+
+Explanation for Problem 7:
+In this probelm you have to search for a number in the array
+so if input is like this
+10
+5 8 3 18 7 10 15 14 13 2
+2
+That means you have to search for 2 from the array and have to print is it in the array or not
+though 2 is in the  array so we will print 
+Yes the number is in the array.
+
+Test Case For Problem_7:
+
+Input_1:
+10
+1 2 3 4 5 6 7 8 9 10
+10
+
+Output_1: 
+the number is in the array.
+
+Input_2:
+5
+1 2 3 4 5
+6
+
+Output_2: 
+The number is not in the array
+
+Input_3:
+10
+1 -1 2 -2 3 4 -5 6 7 -8
+7
+
+Output_3: 
+The number is in the array.
+
+
+Explanation for Problem 8:
+In this problem you have to find the minimum and maximum value from a given array
+
+So if there is a given array like this
+10
+1 2 3 4 5 6 7 8 9 10
+
+we can see that the maximum value is 10 and the minimum is 1
+So the output will be
+
+Minimum: 1
+Maximum: 10
+
+Test Case For Problem_8:
+
+Input_1:
+10
+10 20 30 40 50 60 88 99 11 9
+
+Output_1: 
+99
+9
+
+Input_2:
+5
+-1 0 2 3 -5
+
+Output_2: 
+3
+-5 
+
+Input_3:
+6
+1 2 3 4 5 6
+
+Output_3: 
+6
+1
+
+
+Explanation for Problem 9:
+in this problem you will given a array and a index number and a new number for insert
+so input will be like this
+4
+1 2 3 5
+3 4
+so here 3rd line of input indicate fisrt number is the index number and second number is the element you have to insert
+so after insert the value output array will be 
+
+1 2 3 4 5
+
+Test Case For Problem_9:
+
+Input_1:
+9
+2 3 4 5 6 7 8 9 10
+0 1
+
+Output_1: 
+1 2 3 4 5 6 7 8 9 10
+
+Input_2:
+9
+1 2 3 4 5 6 7 8 9
+9 10
+
+Output_2: 
+1 2 3 4 5 6 7 9 10
+
+Input_3:
+4
+1 1 1 1
+2 2
+
+Output_3: 
+1 1 2 1 1
+
+
+Explanation for Problem 10:
+In this problem you have to take an array as input and an index_number  which one you have to delete
+6 > Size of the array
+1 2 3 4 5 6  > elements of array
+4 > the index you have to delete
+
+Output:
+1 2 3 4 6
+
+Test Case For Problem_10:
+
+Input_1:
+10
+1 2 3 4 5 6 7 8 9 10
+9
+
+Output_1: 
+1 2 3 4 5 6 7 8 9
+
+Input_2:
+5
+1 1 2 1 1
+2
+
+Output_2: 
+1 1 1 1
+
+Input_3:
+6
+1 2 1 2 1 2
+5
+
+Output_3: 
+1 2 1 2 1
+
+
+Explanation for Problem 11:
+In this problem you have to find the summation of all rich number
+A rich number means it is greater than all of his previous element of the array
+so is we consider a sample input like this
+Input:
+10
+1 2 5 4 7 6 8 9 11 3
+here 1 is a rich number so sum=1
+2 is also a rich because it is greater than 1 so sum=1+2
+5 is also rich because it is greater than 1 and 2 so sum=1+2+5
+but 4 is not a rich number so sum=1+2+5
+7 is also a rich because it is greater than 1,2,5,4 so sum=1+2+5+7
+but 6 is not a rich number so sum=1+2+5+7
+8 is also a rich because it is greater than 1,2,5,4,7,6 so sum=1+2+5+7+8
+9 is also a rich because it is greater than 1,2,5,4,7,6,8 so sum=1+2+5+7+8+9
+11 is also a rich because it is greater than 1,2,5,4,7,6,8,9 so sum=1+2+5+7+8+9+11
+but 3 is not a rich number
+so final sum = 1 + 2 + 5 + 7 + 8 + 9 + 11 = 43
+Output:
+43
+
+Test Case For Problem_11:
+
+Input_1:
+10
+1 2 5 4 7 6 8 9 11 3
+
+Output_1:
+43
+
+Input_2:
+20
+1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20
+
+Output_2: 
+210
+
+Input_3:
+10
+10 9 8 7 6 5 4 3 2 1
+
+Output_3: 
+10
+
+
+Explanation for Problem 12:
+in this  problem you have to find the 2nd large number from an array 
+You will take input 2 lines of number first line to contain the size of the array and second-line contains the element of the array
+
+So if we consider below sample as input
+10
+1 2 3 4 5 6 7 8 9 10
+
+Then the 2nd large number is 9
+so we will print 9 as our answer
+
+Test Case For Problem_12:
+
+Input_1:
+10
+1 5 8 2  25 5 92 6 225 595 48
+
+Output_1: 
+225
+
+Input_2:
+15
+89 25 25 84 621 485 221 452 25 21 45 81 626 52 522
+
+Output_2: 
+621
+
+Input_3:
+10
+-1 -2 0 -3 -4 -5 -6 -7 -8 -9
+
+Output_3: 
+-1
+
+
+Explanation for Problem 13:
+In this problem we need to find the sequence of a number from a given array
+so we will take 3 lines as input
+first line the size of the array
+second line the element of the array
+third line the number which frequency we have to find
+
+So if we consider below sample as input
+
+10
+1 2 5 48 9 4 2 5 4 2
+2
+
+So frequency(Number of occurrence) of 2 is 3
+so the output will be 3
+
+Test Case For Problem_13:
+
+Input_1:
+20
+15 158 15 158 1 15 26 1 81 8 1 81 85 412 581 85 4125 458 1 15
+15
+
+Output_1: 
+4
+
+Input_2:
+10
+1 1 1 1 1 1 1 1 1 1 
+1
+
+Output_2: 
+10 
+
+Input_3:
+12
+1 1 1 1 1 1 2 2 2 2 2 2
+3
+
+Output_3: 
+0
+

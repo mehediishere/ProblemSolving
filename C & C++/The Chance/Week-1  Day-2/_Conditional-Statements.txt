@@ -1,0 +1,417 @@
+Week-1 ::: Day-2
+Topic: Conditional Statements.
+
+Tutorial links:
+http://shoshikkha.com/archives/1424
+https://beginnersbook.com/2014/01/c-if-else-statement-example/
+http://cpbook.subeen.com/2011/08/conditional-logic.html
+https://www.geeksforgeeks.org/conditional-or-ternary-operator-in-c-c/
+
+Tasks problems: 
+1. Write a C program to find the maximum between two numbers.
+2. Write a C program to find a minimum between three numbers.
+3. Write a C program to check whether a number is negative, positive, or zero.
+4. Write a C program to check whether a given integer is odd or even.
+5. Given two numbers N and X. Find N is divisible by X or not.
+6. Write a C program to find the third maximum between four numbers.
+7. Write a C program to check whether a triangle is Equilateral, Isosceles, or Scalene.
+8. Write a C program to find whether a given year is a leap year or not.
+9. Find the absolute difference between the two numbers.
+10. A bus can carry maximum K person at a time. How many busses are needed to carry N person?
+11. Given the coordinate of two points p1(x1,y1) and p2(x2,y2). Find which point is closest to the center (0,0).
+12. Given a character C. Determine the character is an uppercase alphabet or lowercase alphabet or a digit.
+13. Given a character C. Determine the character is a vowel or consonant.
+
+MINIMUM=9 -- MEDIUM=11 -- MAXIMUM=13
+
+Explanation For Problem_1:
+Given two number A and B. Find the maximum between A and B.
+If A=4 and B=7 then the corresponding output is: 7. 
+
+Test Case For Problem_1:
+Input_1:
+10 20
+Output_1: 
+20 
+
+Input_2:
+4 5
+Output_2: 
+5 
+
+Input_3:
+-45 -55
+Output_3: 
+-45 
+
+Input_4:
+22 88
+Output_4: 
+88 
+
+Input_5:
+632 882
+Output_5: 
+882
+
+Explanation For Problem_2:
+Given three numbers A,B and C. Find the minimum between A,B and C.
+If A=6,B=8 and C=2 then the corresponding output is: 2
+
+Test Case For Problem_2:
+Input_1:
+1 6 2
+Output_1: 
+1
+
+Input_2:
+6 8 6
+Output_2: 
+6
+
+Input_3:
+212 64 897
+Output_3:
+64
+
+Input_4:
+-45 -62 -78
+Output_4: 
+-78
+
+Input_5:
+5454 212 56465
+Output_5:  
+212
+
+Explanation For Problem_3:
+Given a number X. Check whether X is positive,negative or zero.
+If X=99 then the corresponding output is: positive number.
+
+Test Case For Problem_3:
+Input_1:
+3
+Output_1: 
+positive number.
+
+Input_2:
+-54
+Output_2:
+negative number.
+
+Input_3:
+654354
+Output_3:
+positive number.
+
+Input_4:
+-54163
+Output_4:
+negative number.
+
+Input_5:
+0
+Output_5:
+0
+
+Explanation For Problem_4:
+Given a number X. Check whether X is Even or Odd.
+If X=77 then the corresponding output is: 77 is an odd integer.
+
+Test Case For Problem_4:
+Input_1:
+2
+Output_1: 
+2 is an even integer
+
+Input_2:
+0
+Output_2:
+0 is an even integer
+
+Input_3:
+2121
+Output_3:
+2121 is an odd integer
+
+Input_4:
+212
+Output_4:
+212 is an even integer
+
+Input_5:
+8881
+Output_5:
+8881 is an odd integer
+
+Explanation For Problem_5:
+Given two numbers A and B. Check whether A is divisible by B or not.
+If A=5 and B=3 then the corresponding output is: NO.
+
+Test Case For Problem_5:
+Input_1:
+10 5
+Output_1: 
+YES
+
+Input_2: 
+-55 -5
+Output_2:
+YES
+
+Input_3:
+11 3
+Output_3:
+NO
+
+Input_4:
+-5454 7
+Output_4:
+NO
+
+Input_5:
+0 1
+Output_5:
+YES
+
+Explanation For Problem_6:
+Given four numbers M,N,O and P. Find the third maximum number among them.
+If M=74,N=24,O=76 and P=67 then the corresponding output is: 67
+
+Test Case For Problem_6:
+Input_1: 
+4 5 6 7
+Output_1: 
+5
+
+Input_2:
+-54 -12 -4 5
+Output_2:
+-12
+
+Input_3:
+54 1 123 5
+Output_3:
+5
+
+Input_4:
+1 2 3 4
+Output_4:
+2
+
+Input_5:
+65465 3513 654654 4444
+Output_5:
+4444
+
+Explanation For Problem_7:
+Given three numbers M,N and O. Check whether a triangle is Equilateral,Isosceles or Scalene.
+If M=89,N=90 and O=91 then the corresponding output is: This is a scalene triangle.
+
+Test Case For Problem_7:
+Input_1:
+50 50 60
+Output_1: 
+This is an isosceles triangle.
+
+Input_2:
+89 90 91
+Output_2:
+This is a scalene triangle.
+
+Input_3:
+60 60 60
+Output_3:
+This is an equilateral triangle.
+
+Input_4:
+80 90 80
+Output_4:
+This is an isosceles triangle.
+
+Input_5:
+0 0 0
+Output_5:
+This is an equilateral triangle.
+
+Explanation For Problem_8:
+Given a number M. Find whether M is a leap year or not.
+If M=1888 then the corresponding output is: 1888 is a leap year.
+
+
+Test Case For Problem_8:
+Input_1:
+2016
+Output_1: 
+2016 is a leap year.
+
+Input_2:
+2020
+Output_2:
+2020 is a leap year.
+
+Input_3:
+1971
+Output_3:
+1971 is not a leap year 
+
+Input_4:
+1888
+Output_4:
+1888 is a leap year.
+
+Input_5:
+1999
+Output_5:
+1999 is not a leap year 
+
+Explanation For Problem_9:
+Given two numbers A and N. Find the absolute difference between A and N.
+If A=100 and N=99 then the corresponding output is: 1
+
+Test Case For Problem_9:
+Input_1:
+9 5
+Output_1:
+4
+
+Input_2:
+100 0
+Output_2:
+100
+
+Input_3:
+-100 99
+Output_3:
+199
+
+Input_4:
+-8 -6
+Output_4:
+2
+
+Input_5:
+0 1
+Output_5:
+1
+
+Explanation For Problem_10:
+Given two numbers N and K. Check how many busses are needed to carry N person.
+If N=88 and K=50 then the corresponding output is: 2
+
+Test Case For Problem_10:
+Input_1:
+125 50
+Output_1:
+3
+
+Input_2:
+100 50
+Output_2:
+2
+
+Input_3:
+50 50 
+Output_3:
+1
+
+Input_4:
+14445 19
+Output_4:
+761
+
+Input_5:
+1999 55
+Output_5:
+37
+
+Explanation For Problem_11:
+Given four coordinate points x1,y1,x2 and y2. Find which point is closest from the center (0,0).
+If x1=1,y1=0,x2=0 and y2=3 then the corresponding output is: 1 0
+
+Test Case For Problem_11:
+Input_1:
+25 15 35 10
+Output_1: 
+25 15
+
+Input_2:
+78 12 36 61
+Output_2:
+36 61
+
+Input_3:
+4 3 -1 -2
+Output_3:
+-1 -2
+
+Input_4:
+-5 -3 -4 -6
+Output_4:
+-5 -3
+
+Input_5:
+1 0 0 3
+Output_5:
+1 0
+
+Explanation For Problem_12:
+Given a character C. Determine character C is an uppercase alphabet or lowercase alphabet or a digit.
+If C=7 then the corresponding output is: '7' is a digit.
+
+Test Case For Problem_12:
+Input_1:
+k
+Output_1: 
+'k' is lowercase alphabet.
+
+Input_2:
+H
+Output_2:
+'H' is uppercase alphabet.
+
+Input_3:
+35
+Output_3:
+'35' is a digit.
+
+Input_4:
+"
+Output_4:
+'"' is not an alphabet.
+
+Input_5:
+L
+Output_5:
+'L' is uppercase alphabet.
+
+Explanation For Problem_13:
+Given a character C. Determine the character is a vowel or consonant.
+If C=y then the corresponding output is: y is a consonant.
+
+Test Case For Problem_13:
+Input_1:
+G
+Output_1: 
+G is a consonant.
+
+Input_2:
+U
+Output_2:
+U is a vowel.
+
+Input_3:
+z
+Output_3:
+z is a consonant.
+
+Input_4:
+i
+Output_4:
+i is a vowel.
+
+Input_5:
+Y
+Output_5:
+Y is a consonant.
+

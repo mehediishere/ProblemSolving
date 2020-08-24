@@ -1,0 +1,430 @@
+Week-1::::Day-5
+Task - String  
+  
+String Tutorial:
+http://shoshikkha.com/archives/1504?fbclid=IwAR3HibeAOW7M2msF18Vfo1NptNE51V1Tci_f8zul03oqE9kw2P2ocRXZsXk
+http://shoshikkha.com/archives/1504?fbclid=IwAR3dD7aI8z7HqhYuA8vkRvP3f2hEL_YE2e-8_xKGB9Wza5kgknuM-hl5U3s
+
+Tasks:
+Problem 1: Input a word and count its length without using built-in library.
+Problem 2: Write a program in C to separate the individual characters from a string.
+Problem 3: Input two words and check both words are the same or not.
+Problem 4: Input a word and copy it in another string.
+Problem 5: How to reverse a string without using any function.
+Problem 6: How to input a sentence.
+Problem 7: Input a string and print how many vowels and consonants are there.
+Problem 8: Input a string that will contain only uppercase letters. Convert these letters in lowercase.
+Problem 9: How to convert a string to an integer.
+Problem 10: Input a string and print how many alphabets, digit, and special characters are there.
+Problem 11: Check a string is palindrome or not.
+Problem 12: Write a program that merges two string into another string without using Concat function.
+Problem 13: Return a string after removing all the vowels.
+Problem 14: Write a program in C to find the maximum occurring character in a string.
+Problem 15: Count how many words are in the given input.
+______________________________________________________________________________________________________________________________________
+
+MINIMUM=11,MEDIUM=13,MAXIMUM=15;
+
+Explanation_Problem_01:
+
+Take a word then count each letter of the word.Total number of letters of the word is the lenth of the word.
+
+Test Case Problem_01:
+Input_1:
+abcde
+Output_1:
+5
+
+Input_2:
+abcde!
+Output_12:
+6
+
+Input_3:
+aabbaaaaabbbbb.
+Output_3:
+15
+
+Input_4:
+javacode!
+Output_4:
+9
+
+Explanation_Problem_02:
+
+Just print each characters of the word but take a space between the two characters.
+
+Test Case Problem_02:
+Input_1:
+abcde
+Output_1:
+a b c d e
+
+Input_2:
+abcde!
+Output_2:
+a b c d e !
+
+Input_3:
+aabbaaaaabbbbb.
+Output_3:
+a a b b a a a a a b b b b b .
+
+Input_4:
+javacode!
+Output_4:
+j a v a c o d e !
+
+Explanation_Problem_03:
+
+Suppose A and B two strings.If evary character of string A[i] is equal to B[i] then two string are same else if string  A[i] is not equal to
+B[i] then two string is not same.
+
+Test Case Problem_03:
+Input_1:
+abcde
+uvxyz
+Output_1:
+No
+
+Input_2:
+abcde!
+abcde!
+Output_2:
+Yes
+
+Input_3:
+aabbaaaaa.
+aabbaa.
+Output_3:
+No
+
+Input_4:
+javacode!
+cpluscode
+Output_4:
+No
+
+Explanation_Problem_04:
+
+Take a string S.Make another string C from S such that C[i] is equal to the S[i].Here "i" is a index of the string.
+
+Test Case Problem_04:
+Input_1:
+string
+Output_1:
+string
+
+Input_2:
+baba
+Output_2:
+baba
+
+Input_3:
+mama
+Output_3:
+mama
+
+Input_4:
+string_stream!
+Output_4:
+string_stream!
+
+Explanation_Problem_05:
+
+Take a string S of length L.Make another string C from S such that C[i] is equal to the S[L-i-1], 0 <= i < L. 
+
+Test Case Problem_05:
+Input_1:
+bangladesh
+Output_1:
+hsedalgnab
+
+Input_2:
+quick.
+Output_2:
+.kciuq
+
+Input_3:
+Sphinx
+Output_3:
+xnihpS
+
+Input_4:
+Amazinglyfewdiscothequesprovidejukeboxes
+Output_4:
+exobekujedivorpseuqehtocsidwefylgnizamA
+
+
+Explanation_Problem_06:
+
+Please use gets() and puts() function.
+
+Test Case Problem_06:
+Input_1:
+bangladesh university of business and technology.
+Output_1:
+bangladesh university of business and technology.
+
+Input_2:
+The quick brown fox jumps over the lazy dog.
+Output_2:
+The quick brown fox jumps over the lazy dog.
+
+Input_3:
+Sphinx of black quartz, judge my vow.
+Output_3:
+Sphinx of black quartz, judge my vow.
+
+Input_4:
+Amazingly few discotheques provide jukeboxes.
+Output_4:
+Amazingly few discotheques provide jukeboxes.
+
+Explanation_Problem_07:
+
+If A string S of i'th character (a,A,e,E,i,I,O,o,u,U) count its vowel otherwise consonent, A<=S[i]<=Z or a<=S[i]<=z.
+
+Test Case Problem_07:
+Input_1:
+The quick brown fox jumps over the lazy dog
+Output_1:
+Vowels : 11
+Consonets : 24
+
+Input_2:
+pangram
+Output_2:
+Vowels : 2
+Consonets : 6
+
+Input_73:
+Eunoia
+Output_3:
+Vowels : 5
+Consonets : 1
+
+Input_4:
+sequoia
+Output_4:
+Vowels : 5
+Consonets : 2
+
+Explanation_Problem_08:
+
+Suppose a string S.
+String S of i'th character to make lowercase just assign s[i]=s[i]+32 , A<=S[i]<=Z.
+
+Test Case Problem_08:
+Input_1:
+BUBT
+Output_1:
+bubt
+
+Input_2:
+ANAGRAM
+Output_2:
+anagram
+
+Input_3:
+TECHNICAL
+Output_3:
+technical
+
+Input_4:
+LOGO
+Output_4:
+logo
+
+Explanation_Problem_09:
+
+Suppose a string S of length L.For integer number=(s[0]-'0')*pow(10,L-1)+(s[1]-'0')*pow(10,L-2)+........+(s[l-1]-'0')*pow(10,0).
+ 0<=s[i]<=9 .
+
+Test Case Problem_09:
+Input_1:
+18192103001
+Output_1:
+18192103001
+
+Input_2:
+201209
+Output_2:
+201209
+
+Input_3:
+2020
+Output_3:
+2020
+
+Input_4:
+55555555
+Output_4:
+55555555
+
+Explanation_Problem_10:
+
+Suppose a string S of lenth L. Condition of digit 0<=s[i]<=9 ,Condition of  alphabet A<=s[i]<=Z or a<=s[i]<=z , otherwise its special character.
+
+Test Case Problem_10:
+Input_1:
+aaasseeerrttyy11122434556677hhhh!!@@##$%%^^&&**?/<>
+Output_1:
+Alphabet : 18
+Digit : 14
+Special: 19
+
+Input_2:
+what1234!@#$
+Output_2:
+Alphabet : 4
+Digit : 4
+Special: 4
+
+Input_3:
+pray for 2020
+Output_103:
+Alphabet : 7
+Digit : 4
+Special: 3
+
+Input_4:
+cgpa 4? we don't care
+Output_4:
+Alphabet : 14
+Digit : 1
+Special: 6
+
+Explanation_Problem_11:
+
+Take a string S of length L.Check all characters.If s[i] is equal to s[L-i-1] then its palindrome else not.  0<=i<L.
+
+Test Case Problem_11:
+Input_1:
+abcdcba
+Output_1:
+Yes it's palindrome.
+
+Input_2:
+baabc
+Output_2:
+Not a palindrome.
+
+Input_3:
+5432112345
+Output_3:
+Yes it's palindrome.
+
+Input_4:
+xyzxyx
+Output_4:
+Not a palindrome.
+
+Explanation_Problem_12:
+
+Take two strings S and S1 of length L and L1.Create new string S3 such that S3=S+S1...Suppose length
+of string s3 equals L3=L+L1,then insert 
+S3[0,1,....,L-2,L-1]=S[0,1,.....L-2,L-1];
+S3[L,L+1,L+2,L+3....,L3-3,L3-2]=S1[0,1,.....L1-2,L1-1];
+
+Test Case Problem_12:
+Input_1:
+abcd
+cba
+Output_1:
+abcdcda;
+
+Input_2:
+Not
+palindrome.
+Output_2:
+Notpalindrome.
+
+Input_3:
+stringnumber
+5432112345
+Output_3:
+stringnumber5432112345
+
+Input_4:
+xyzxyx
+abcde
+Output_4:
+xyzxyxabcde
+
+Explanation_Problem_13:
+
+Suppose a string S of lenth L.Just check S[i] vowels(A,a,E,e,I,i,O,o,U,u) or not,if S[i] is not vowels just print it.
+
+Test Case Problem_13:
+Input_1:
+seven
+Output_1:
+svn
+
+Input_2:
+consonants
+Output_2:
+cnsnnts
+
+Input_3:
+frustrating
+Output_3:
+frstrtng
+
+Input_4:
+Nothing
+Output_4:
+Nthng
+
+Explanation_Problem_14:
+
+Suppose a string S of lenth L.(2 Nested loop) First loop iterate i=0 to i<=L-1 ,second loop iterate j=0 to j<=L-1 and check if S[i]==S[j]
+count it then end of second loop check it maximum or not if its maximum then memorize max=S[i] .
+
+Test Case Problem_14:
+Input_1:
+seven
+Output_1:
+e
+
+Input_2:
+consonants
+Output_2:
+n
+
+Input_3:
+frustrating
+Output_3:
+r
+
+Input_4:
+Nothing
+Output_4:
+N
+
+Explanation_Problem_15:
+
+Suppose a sentence S of lenth L.Check how many space in the sentence S.Then print space+1.
+
+Test Case Problem_14:
+Input_1:
+bangladesh university of business and technology.
+Output_1:
+6
+
+Input_2:
+The quick brown fox jumps over the lazy dog.
+Output_2:
+9
+
+Input_3:
+Sphinx of black quartz, judge my vow.
+Output_3:
+7
+
+Input_4:
+Amazingly few discotheques provide jukeboxes.
+Output_4:
+5
+
