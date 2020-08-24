@@ -1,0 +1,711 @@
+***************Week:1 - Day:1*******************
+Fundamentals
+
+
+Solution of problem_1;
+
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    int sideA,sideB,sideC;
+    double s,area;
+    scanf("%d%d%d",&sideA,&sideB,&sideC);
+    s=double(sideA+sideB+sideC)/2.0;	///s means perimeter
+    area=sqrt(s*(s-sideA)*(s-sideB)*(s-sideC));
+    printf("%.3lf\n",area);
+    
+    return 0;
+}
+
+
+***************Week:1 - Day:2*******************
+Conditional_Statements
+
+
+Solution_of:
+
+Problem_1:
+
+#include<stdio.h>
+
+int main()
+{
+    int number1,number2;
+    scanf("%d%d",&number1,&number2);
+    if(number1>number2)
+    {
+        printf("%d\n",number1);
+    }
+    if (number2>number1)
+    {
+        printf("%d\n",number2);
+    }
+    else
+    {
+        printf("Both are equal\n");
+    }
+    
+    return 0;
+}
+
+Problem_2:
+
+#include<stdio.h>
+
+int main()
+{
+    int number1,number2,number3;
+    scanf("%d%d%d",&number1,&number2,&number3);
+    if(number1<number2 && number1<number3)
+    {
+        printf("%d\n",number1);
+    }
+    else if(number2<number3)
+    {
+        printf("%d\n",number2);
+    }
+    else
+    {
+        printf("%d\n",number3);
+    }
+    
+    return 0;
+}
+
+Problem_3:
+
+#include<stdio.h>
+
+int main()
+{
+    int number;
+    scanf("%d",&number);
+    if(number<=0)
+    {
+        if(number==0)
+        {
+            printf("0\n");
+        }
+        else
+        {
+            printf("negative number.\n");
+        }
+    }
+    else
+    {
+        printf("positive number.\n"); 
+    }
+        
+    return 0;
+}
+
+Problem_4:
+
+#include<stdio.h>
+
+int main()
+{
+    int number,remainder;
+    scanf("%d",&number);
+    remainder=number%2;
+    if(remainder==0)
+    {
+        printf("%d is an even integer\n",number);
+    }
+    else
+    {
+        printf("%d is an odd integer\n",number);
+    }
+    
+    return 0;
+}
+
+Problem_5:
+
+#include<stdio.h>
+
+int main()
+{
+    int n,x,remainder;
+    scanf("%d%d",&n,&x);
+    remainder=n%x;
+    if(remainder==0)
+    {
+        printf("YES\n");
+    }
+    else
+    {
+        printf("NO\n");
+    }
+        
+    return 0;
+}
+
+Problem_6:
+
+#include<stdio.h>
+
+int main()
+{
+    int a,b,c,d;
+    scanf("%d%d%d%d",&a,&b,&c,&d);
+    if(a>b && a<c && a<d) 
+    {
+        printf("%d\n",a);
+    }
+    else if(a>c && a<b && a<d) 
+    {
+        printf("%d\n",a);
+    }
+    else if(a>d && a<c && a<b) 
+    {
+        printf("%d\n",a);
+    }
+    else if(b>a && b<c && b<d)
+    {
+        printf("%d\n",b);
+    }
+    else if(b>c && b<a && b<d)
+    {
+        printf("%d\n",b);
+    }
+    else if(b>d && b<c && b<a)
+    {
+        printf("%d\n",b);
+    }
+    else if(c>b && c<a && c<d)
+    {
+        printf("%d\n",c);
+    }
+    else if(c>a && c<b && c<d)
+    {
+        printf("%d\n",c);
+    }
+    else if(c>d && c<a && c<b)
+    {
+        printf("%d\n",c);
+    }
+    else if(d>b && d<a && d<c)
+    {
+        printf("%d\n",d);
+    }
+    else if(d>c && d<a && d<b)
+    {
+        printf("%d\n",d);
+    }
+    else if(d>a && d<b && d<c)
+    {
+        printf("%d\n",d);
+    }
+    else
+    {
+        printf("There is no third largest number.\n");
+    }
+        
+    return 0;
+}
+
+Problem_7:
+
+#include<stdio.h>
+
+int main()
+{
+    int sideA,sideB,sideC;
+    scanf("%d%d%d",&sideA,&sideB,&sideC);
+    if(sideA==sideB && sideB==sideC)
+    {
+        printf("This is an equilateral triangle.\n");
+    }
+    else if(sideA==sideB || sideA==sideC || sideB==sideC)
+    {
+        printf("This is an isosceles triangle.\n");
+    }
+    else
+    {
+        printf("This is a scalene triangle.\n");
+    }
+    
+    return 0;
+}
+
+Problem_8:
+
+#include<stdio.h>
+
+int main()
+{
+    int year;
+    scanf("%d",&year);
+    if (year%400==0)
+    {
+        printf("%d is a leap year.\n",year);
+    }
+    else if(year%100==0)
+    {
+        printf("%d is a not leap year.\n",year);
+    }
+    else if(year%4==0)
+    {
+        printf("%d is a leap year.\n",year);
+    }
+    else
+    {
+        printf("%d is not a leap year.\n",year);
+    }
+    
+    return 0;
+}
+
+Problem_9:
+
+#include<stdio.h>
+
+int main()
+{
+    int number1,number2,difference;
+    scanf("%d%d",&number1,&number2);
+    if(number1>number2)
+    {
+        difference=number1-number2;
+    }
+    else
+    {
+        difference=number2-number1;
+    }
+    printf("%d\n",difference);
+    
+    return 0;
+}
+
+Problem_10:
+
+#include<stdio.h>
+
+int main()
+{
+    int k,n;
+    scanf("%d%d",&n,&k);
+    if(n%k==0)
+    {
+        printf("%d\n",n/k);
+    }
+    else
+    {
+        printf("%d\n",(n/k)+1);
+    }
+    
+    return 0;
+}
+
+Problem_11:
+
+#include<stdio.h>
+
+int main()
+{
+    double x1,y1,x2,y2,m,n,distance_zeroTo_x1y1,distance_zeroTo_x2y2;
+    scanf("%lf %lf %lf %lf",&x1,&y1,&x2,&y2);
+    m=(x1*x1+y1*y1);
+    n=(x2*x2+y2*y2);
+    distance_zeroTo_x1y1=sqrt(m);
+    distance_zeroTo_x2y2=sqrt(n);
+    if(distance_zeroTo_x1y1<distance_zeroTo_x2y2)
+    {
+        printf("%.0lf %.0lf\n",x1,y1);
+    }
+    else
+    {
+        printf("%.0lf %.0lf\n",x2,y2);
+    }
+    
+    return 0;
+}
+
+Problem_12:
+
+#include<stdio.h>
+
+int main()
+{
+    char ch;
+    scanf("%c",&ch);
+    if(ch>='A' && ch<='Z')
+    {
+        printf("'%c' is uppercase alphabet.\n",ch);
+    }
+    else if(ch>='a' && ch<='z')
+    {
+        printf("'%c' is lowercase alphabet.\n",ch);
+    }
+    else if(ch>='0' && ch<='9')
+    {
+        printf("'%c' is a digit.\n",ch);
+    }
+    else
+    {
+        printf("'%c' is not an alphabet.\n",ch);
+    }
+    
+    return 0;
+}
+
+Problem_13:
+
+#include<stdio.h>
+
+int main()
+{
+    char ch;
+    scanf("%c",&ch);
+    if(ch=='a' || ch=='e' || ch=='i' || ch=='o' || ch=='u' || ch=='A' || ch=='E' || ch=='I' || ch=='O' || ch=='U')
+    {
+        printf("%c is a vowel.\n",ch);
+    }
+    else if((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+    {
+        printf("%c is a consonant.\n",ch);
+    }
+        
+    return 0;
+}
+
+
+***************Week:1 - Day:3*******************
+ForLoop_WhileLoop
+
+Solution of:
+
+Problem_1.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,i;
+    scanf("%d",&n);
+    for(i=n; i>0; i--)
+    {
+        printf("%d ",i);
+    }
+
+    return 0;
+}
+
+
+Problem_2.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,i,sum=0;
+    scanf("%d",&n);
+    for(i=1; i<=n; i+=2)
+    {
+        sum+=i;
+    }
+    printf("%d\n",sum);
+
+    return 0;
+}
+
+
+Problem_3.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,i,sum=0;
+    scanf("%d",&n);
+    for(i=1; i<=n; i++)
+    {
+        if(i%2==1)
+        {
+            sum+=i;
+        }
+        else
+        {
+            sum-=i;
+        }
+    }
+    printf("%d\n",sum);
+
+    return 0;
+}
+
+
+Problem_4.
+
+#include<stdio.h>
+
+int main()
+{
+    int p,b,i,mul=1;
+    scanf("%d %d",&b,&p);
+    for(i=1; i<=p; i++)
+    {
+        mul*=b;
+    }
+    printf("%d\n",mul);
+
+    return 0;
+}
+
+
+Problem_5.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,i,mul=1;
+    scanf("%d",&n);
+    for(i=1; i<=n; i++)
+    {
+        mul*=i;
+    }
+    printf("%d\n",mul);
+
+    return 0;
+}
+
+
+Problem_6.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,i;
+    scanf("%d",&n);
+    for(i=1; i<=10; i++)
+    {
+        printf("%d X %d = %d\n",n,i,n*i);
+    }
+
+    return 0;
+}
+
+
+
+
+Problem_7.
+
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    while(n--)
+    {
+        printf("%d ",n+1);
+    }
+
+    return 0;
+}
+
+
+Problem_8.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,i=1,sum=0;
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        sum+=i;
+        i+=2;
+    }
+    printf("%d\n",sum);
+
+    return 0;
+}
+
+
+Problem_9.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,i=1,sum=0;
+    scanf("%d",&n);
+    while(i<=n)
+    {
+        if(i%2==1)
+        {
+            sum+=i;
+        }
+        else
+        {
+            sum-=i;
+        }
+        i++;
+    }
+    printf("%d\n",sum);
+
+    return 0;
+}
+
+
+Problem_10.
+
+#include<stdio.h>
+
+int main()
+{
+    int p,b,mul=1;
+    scanf("%d %d",&b,&p);
+    while(p--)
+    {
+        mul*=b;
+    }
+    printf("%d\n",mul);
+
+    return 0;
+}
+
+
+Problem_11.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,mul=1;
+    scanf("%d",&n);
+    while(n--)
+    {
+        mul*=n+1;
+    }
+    printf("%d\n",mul);
+
+    return 0;
+}
+
+
+Problem_12.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,i=1;
+    scanf("%d",&n);
+    while(i<=10)
+    {
+        printf("%d X %d = %d\n",n,i,n*i),i++;
+    }
+
+    return 0;
+}
+
+
+Problem_13.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,sum=0;
+    scanf("%d",&n);
+    while(n)
+    {
+        sum+=(n%10);
+        n/=10;
+    }
+    printf("%d\n",sum);
+
+    return 0;
+}
+
+
+Problem_14.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,rev=0;
+    scanf("%d",&n);
+    while(n)
+    {
+        rev*=10;
+        rev+=(n%10);
+        n/=10;
+    }
+    printf("%d\n",rev);
+
+    return 0;
+}
+
+
+Problem_15.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,m,rev=0;
+    scanf("%d %d",&n,&m);
+    while(m)
+    {
+        rev*=10;
+        rev+=(m%10);
+        m/=10;
+    }
+    while(rev)
+    {
+        n*=10;
+        n+=(rev%10);
+        rev/=10;
+    }
+    printf("%d\n",n);
+
+    return 0;
+}
+
+
+Problem_16.
+
+#include<stdio.h>
+
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    n++;
+    while(n%3!=0)
+    {
+        n++;
+    }
+    printf("%d\n",n);
+
+    return 0;
+}
+
+
+Problem_17.
+
+#include<stdio.h>
+
+int main()
+{
+    int n,cnt=0;
+    scanf("%d",&n);
+    while(n%2==0)
+    {
+        n/=2;
+        cnt++;
+    }
+    printf("%d %d\n",n,cnt);
+
+    return 0;
+}
